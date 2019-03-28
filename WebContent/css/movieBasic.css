@@ -1,0 +1,750 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: "NanumGothic";
+	src: url("fonts/NanumGothic.ttf") format("truetype");
+} 
+
+html {
+	font-family: "NanumGothic";
+	overflow-y:scroll;
+}
+
+body {
+	font-family:"NanumGothic", "나눔고딕", "맑은 고딕", "돋움", Dotum, Verdana, Tahoma;
+	font-color:#666666;
+	font-size: 9pt;
+	display: block;
+}
+
+/* ------------------- 홈페이지 전체 wrap ------------------- */
+#wrap {
+	width: 100%;
+	display: block;
+	
+}
+
+/* ----------- header,body,footer 감싸는 영역  -------------*/
+#inner-wrap {
+	width: 1200px;
+/* 	heigh: 100%; */
+	margin: 25px auto;
+}
+
+
+/* ----------------------header---------------------- */
+#inner-header {
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+	display: block;
+}
+
+#header{
+	width: 1200px;
+	height: 110px;
+}
+
+#logo {
+	width: 230px;
+    height: 110px;
+}
+
+.header-logo{
+   /*  display: inline-block; */
+    width: 230px;
+    height: 120px;
+    float: left;
+}
+
+#header-right {
+	width: 400px; height: 61px;
+	float: right;
+}
+
+#right {
+	float: right;
+}
+
+#right ul { 
+	margin: 0
+}
+
+#right ul li {
+	float: left;
+}
+
+#right ul li a {
+	color: #666666;
+	/* font-weight: bold; */
+	text-decoration: none;
+}
+
+#right ul li a:hover {
+	color: #F1404B;
+	text-decoration: none;
+}
+
+.lg {
+	width: 60px;
+	height: 30px;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.lgtt {
+	width: 70px;
+	height: 30px;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.lgt {
+	width: 75px;
+	height: 30px;
+	display: inline-block;
+	text-decoration: none;
+}
+
+
+
+/* --------------------- 로그인, idpwfind css ------------------ */
+.login-container {
+	width: 360px;
+	height: 340px;
+	padding: 0 0;
+	margin: auto;
+}
+
+.login-form {
+	position: relative;
+	z-index: 1;
+	background: #FFFFFF;
+	max-width: 360px;
+	height: 100%;
+	margin: 0;
+	padding: 45px;
+	text-align: center;
+}
+
+.login-form input {
+	outline: 0;
+	background: #f2f2f2;
+	width: 100%;
+	border: 1px solid #666666;
+	margin: 0 0 15px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+.login-form button, .login-form input[type=submit], .login-form input[type=button] {
+	text-transform: uppercase;
+	outline: 0;
+	background: #666666;
+	width: 100%;
+	border: 0;
+	padding: 15px;
+	color: #FFFFFF;
+	font-size: 14px;
+	-webkit-transition: all 0.3 ease;
+	transition: all 0.3 ease;
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+}
+
+.login-form input[type=submit]:hover {
+	background: #F1404B;
+}
+
+.login-form input[type=button]:hover, .login-form input[type=button]:active {
+	background: #F1404B;
+} 
+
+#find-btn, #join-btn {
+	width: 135px;
+}
+
+.find_tbl {
+	width: 100%;
+	height: 100px;
+	border: 1px solid #b0b0b0;
+	margin-bottom: 25px;
+	line-height: 100px;
+}
+
+
+
+/* ------------------------- modifypass -------------------------- */
+
+.modipass-container {
+	width: 400px;
+	padding: 0 0;
+	margin: auto;
+}
+
+
+.modipass-form {
+	position: relative;
+	background: #FFFFFF;
+	max-width: 400px;
+	padding-top: 45px;
+	text-align: center;
+}
+
+.modipass-form input[type=password] {
+	width: 100%;
+}
+
+.modipass-container input[name=modifyInput] {
+	text-transform: uppercase;
+	outline: 0;
+	background: #666666;
+	width: 100%;
+	border: 0;
+	padding: 15px;
+	color: #FFFFFF;
+	font-size: 14px;
+	-webkit-transition: all 0.3 ease;
+	transition: all 0.3 ease;
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+}
+
+.modipass-container input[type=submit]:hover, .modipass-container input[type=submit]:active {
+	background: #F1404B;
+} 
+
+/* --------------------- 회원수정폼css --------------------- */
+
+.modify-container {
+	width: 100%;
+	height: auto;
+}
+
+.modify-form {
+	position: relative;
+	z-index: 1;
+	max-width: 700px;
+	margin: 0 auto 100px;
+	padding: 45px;
+	/* text-align: center; */
+}
+
+.modify-form td {
+	font-size: 14px;
+	padding: 0;
+}
+
+.modify-form p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.modify-form input[type=text],[type=password]{
+	outline: 0;
+	background: #f2f2f2;
+	width: 450px;
+	height: 46.8px;
+	border: 1px solid #666666;
+	margin: 0 0;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 14px;
+} 
+
+.modify-form input[type=checkbox] {
+	margin-top: 50px;
+}
+
+.modify-form input[name=modifyInput] {
+	text-transform: uppercase;
+	outline: 0;
+	background: #666666;
+	width: 100%;
+	border: 0;
+	padding: 15px;
+	color: #FFFFFF;
+	font-size: 14px;
+	-webkit-transition: all 0.3 ease;
+	transition: all 0.3 ease;
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+}
+
+.modify-form input[type=submit] {
+	outline: 0;
+	background: #f2f2f2;
+	width: 450px;
+	height: 46.8px;
+	margin: 0 0;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 14px;
+} 
+
+.modify-form input[id=modifyProcess] {
+	width: 100%;
+	margin: 15px 0 15px 0;
+	outline: 0;
+	background: #666666;
+	color: #FFFFFF;
+	font-size: 14px;
+	-webkit-transition: all 0.3 ease;
+	transition: all 0.3 ease;
+	cursor: pointer;
+}
+
+.modify-form input[id=delete] {
+	outline: 0;
+	width: 300px;
+	background: #666666;
+	margin: auto;
+	color: #FFFFFF;
+	font-size: 14px;
+	-webkit-transition: all 0.3 ease;
+	transition: all 0.3 ease;
+	cursor: pointer;
+	float:left;
+}
+
+.modify-form input[id=cancle] {
+	utline: 0;
+	width: 300px;
+	background: #666666;
+	margin: auto;
+	color: #FFFFFF;
+	font-size: 14px;
+	-webkit-transition: all 0.3 ease;
+	transition: all 0.3 ease;
+	cursor: pointer;
+}
+
+.modify-form input[type=submit]:hover {
+	background: #F1404B;
+}
+
+.modify-table {
+	width: 584.8px;
+	height: 600px;
+	margin: 0 auto;
+}
+
+/* -------------------- 회원가입css ------------------ */
+
+.join-container {
+	width: 100%;
+	height: auto;
+}
+
+.join-form {
+	position: relative;
+	z-index: 1;
+	max-width: 700px;
+	margin: 0 auto 100px;
+	padding: 45px;
+	/* text-align: center; */
+}
+
+.join-form td {
+	font-size: 14px;
+	padding: 0;
+}
+
+.join-checkId {
+	width: 450px; 
+	margin: 0;
+}
+
+.join-form p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.join-form input[name=registerInput]{
+	text-transform: uppercase;
+	outline: 0;
+	background: #666666;
+	width: 100%;
+	border: 0;
+	padding: 15px;
+	color: #FFFFFF;
+	font-size: 14px;
+	-webkit-transition: all 0.3 ease;
+	transition: all 0.3 ease;
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+}
+
+.join-form input[type=text],[type=password]{
+	outline: 0;
+	background: #f2f2f2;
+	width: 450px;
+	height: 46.8px;
+	border: 1px solid #666666;
+	margin: 0 0;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 14px;
+} 
+
+.join-form input[type=checkbox] {
+	margin-top: 30px;
+}
+
+.join-form input[id=id] {
+	width: 300px;
+	float: left; 
+	margin-right: 20px;
+}
+
+.join-form input[id=checkId] {
+	width:130px;
+}
+
+.join-form input[id=process] {
+	text-transform: uppercase;
+	outline: 0;
+	width: 290px;
+	background: #666666;
+	margin: auto;
+	color: #FFFFFF;
+	font-size: 14px;
+	-webkit-transition: all 0.3 ease;
+	transition: all 0.3 ease;
+	cursor: pointer;
+	float:left;
+}
+
+.join-form input[id=cancle] {
+	text-transform: uppercase;
+	outline: 0;
+	width: 290px;
+	background: #666666;
+	margin: auto;
+	color: #FFFFFF;
+	font-size: 14px;
+	-webkit-transition: all 0.3 ease;
+	transition: all 0.3 ease;
+	cursor: pointer;
+}
+
+.join-form input[type=submit]:hover {
+	background: #F1404B;
+}
+
+.join-table {
+	width: 584.8px;
+	height: 600px;
+	margin: 0 auto;
+}
+
+/* -------------------- my page ----------------------  */
+
+.mypage_container {
+	width: 100%;
+}
+
+.mypage_form {
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.mypage_form input[name=mypageInput] {
+	text-transform: uppercase;
+	outline: 0;
+	background: #666666;
+	width: 100%;
+	border: 0;
+	padding: 15px;
+	color: #FFFFFF;
+	font-size: 14px;
+	-webkit-transition: all 0.3 ease;
+	transition: all 0.3 ease;
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+}
+
+.mypage_form input[name=mypageInput]:hover, input[name=mypageInput]:active {
+	background: #F1404B;
+}
+
+/* ------------------ admin,magazine,mypage form -------------------------------*/
+
+
+.admin_container,
+.mypage_container {
+   width: 100%;
+   font-family:"NanumGothic", "나눔고딕", "맑은 고딕", "돋움", Dotum, Verdana, Tahoma;
+   font-color:#666666;
+   font-size: 12pt;
+   display: block;
+   margin-top: 45px; 
+}
+
+.admin_form,
+.mypage_form {
+   position: relative;
+   width: 1200px;
+   height: auto;
+}
+
+
+/* --------------------드롭다운메뉴바----------------------  */
+.menubar{
+	width: 1200px;
+	height: 50px;
+	margin: 15px auto;
+	font-size:14px;
+	display: inline-block;
+	background: #666666;
+}
+
+.menubar ul{
+	width: auto;
+	height:50px;
+	padding-left: 0;
+	float: inherit; 
+	list-style:none;
+	margin:0;
+}
+
+.menubar li{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	width: 14.2857143%;
+	float: left;
+}
+
+.menubar li a{
+	margin:0px;
+	padding:0;
+	color: white;
+	/* font-weight: bold; */
+	line-height:50px;
+	text-align:center;
+	display:block;
+}
+
+.menubar li a:hover {
+	background: rgb(71,71,71);
+	color:#FFFFFF;
+	/* font-weight: bold; */
+}
+
+.menubar ul li:hover a {
+	background: rgb(71,71,71);
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+/* 드랍메뉴 숨기기 효과 */
+.menubar li ul{
+	display:none;
+	height:auto;
+	padding:0px;
+	margin:0px;
+	border:0px;
+	position:absolute;
+	z-index:200;
+}
+
+.menubar li:hover ul{
+	width:171.4285714285714px;
+	display:block;
+}
+
+.menubar li li {
+	width:171.4285714285714px;
+	float:none;
+	margin:0px;
+	padding:0px;
+	display:block;
+	background:#666666;
+}
+
+.menubar li:hover li a{
+	background:none;
+}
+
+.menubar li ul a{
+	display:block;
+	height:50px;
+	font-size:12px;
+	margin:0px;
+	padding:0px 10px 0px 15px;
+	text-align: center;
+}
+
+.menubar li ul a:hover, .menubar li ul li:hover a{
+	background: #f1404b;
+	border:0px;
+	color:#ffffff;
+	text-decoration:none;
+}
+
+/* -----------------------wishlist--------------------------*/
+
+
+.wishlist {
+	width:100%;
+	border-top:2px solid #555555;
+	float: left;
+}
+
+.wishlist caption {
+	position:absolute; 
+	left:auto; 
+	top:-99999em;  
+	width:1px; 
+	height:1px;
+}
+.wishlist th,.wishlist td {
+	padding:10px 0.85em 8px 8px; 
+	font:normal 12px/14px Dotum; 
+	text-align:center;
+	border-bottom:1px solid #e9e9e9;
+}
+.wishlist thead th {
+	font-weight:bold; 
+	border-bottom:1px solid #cccccc;
+}
+.wishlist thead th .th_img {
+	margin-top:-3px; 
+	vertical-align:middle;
+}
+.wishlist tbody td {
+	padding:8px 0 6px 0;
+	color:#333
+	}
+.wishlist tbody td a {
+	color:#333;
+	text-decoration:none
+}
+.wishlist tbody td a:hover,
+.wishlist tbody td a:active {color:#000;}
+.wishlist tbody td img {vertical-align:middle}
+.wishlist tbody td.smfont{font-size:11px;color:#888888}
+.wishlist tbody td.inpalign {text-align:right}
+.wishlist tbody td.imgalign {text-align:left}
+.wishlist tbody td span.reply {
+	color:#ff6c25;
+	font-weight:bold
+}
+
+.b-close input {
+	margin-right: 20px;
+
+}
+	
+.del {
+	text-decoration: none;
+	color: #FFFFFF;
+	background-color: #666666;
+	text-align: center;
+	font-size: 14px;
+	height: 20px;
+	width: 50px;
+	display: inline-block;
+	line-height:20px;
+	outline: 0;
+	border: 0;
+	-webkit-transition: all 0.3 ease;
+	transition: all 0.3 ease;
+	cursor: pointer;
+}
+	
+.del:hover, .del_btn:active {
+	background: #F1404B;
+	text-decoration: none;
+}
+
+/* -------------------------Q&A-------------------------------*/
+ .qna_container {
+   width: 100%;
+   font-family:"NanumGothic", "나눔고딕", "맑은 고딕", "돋움", Dotum, Verdana, Tahoma;
+   font-color:#666666;
+   font-size: 12pt;
+   display: block;
+   margin-top: 45px;
+} 
+
+.footer {
+color: white;
+background-color: #333333;
+}
+
+.qna_form {
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.qna_content {
+   width: 100%;
+}
+
+.qna_number{
+   padding:10px;
+}
+#qna_notdata{
+   width : 100%;
+   height : 300px;
+   text-align : center;
+   border: 1px solid #dddddd;
+   padding-top: 140px;
+}
+
+/* ------------------magazien form-------------------------------*/
+
+.magazine_container 
+{
+   width: 100%;
+   font-family:"NanumGothic", "나눔고딕", "맑은 고딕", "돋움", Dotum, Verdana, Tahoma;
+   font-color:#666666;
+   font-size: 12pt; 
+   display: block;
+   margin-top: 45px; 
+}
+
+.magazine_form{
+   position: relative;
+   width: 1200px;
+   height: auto;
+
+}
+
+/* --------------------------- body -------------------------- */
+
+.inner-body {
+	width: 1200px;
+	margin: 0 auto;	
+}
+
+.inner-title {
+	margin-bottom: 20px;
+	font-size: 50px;
+	font-weight: bold;
+	color:#F1404B;
+	text-align: center;
+}
+
+
+/* -------------------------- footer -------------------------- */
+
+ .inner-footer {
+	width: 1200px;
+	height: 100px;
+	margin-top: 200px;
+}
+
+.inner-footer p {
+	text-align: center;
+} 
+

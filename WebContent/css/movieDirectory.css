@@ -1,0 +1,174 @@
+
+.moviedir_container {
+	width: 100%;
+	height: 1000px;
+}
+
+.moviedir_form {
+	position: relative;
+	width: 1200px;
+	height: 1000px;
+	margin: 0 auto;
+	padding-top: 45px;
+	position: absolute;
+	
+}
+
+.moviedir_content, .poster_area {
+	width: 1200px;
+	height: 750px;
+}
+
+div.poster_wrap{
+	position: relative;
+	width: 300px;
+	height: 380px;
+	display : block;
+	float: left;
+	overflow: hidden;
+	font-family: 'Raleway', Arial, sans-serif;
+  	color: #ffffff;
+ 	text-align: left;
+  	font-size: 16px;
+}
+
+div.poster_wrap * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+div.poster_wrap img {
+  max-width: 100%;
+  backface-visibility: hidden;
+  vertical-align: top;
+}
+
+div.poster_wrap:after,
+div.poster_wrap figcaption {
+  position: absolute;
+  /* top: 20px; */
+  bottom: 60px;
+  left: 20px;
+  right: 20px;
+}
+
+div.poster_wrap:after {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.70);
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  opacity: 0;
+}
+
+div.poster_wrap figcaption {
+  font-color: #ffffff;
+  z-index: 1;
+  padding: 30px;
+}
+
+div.poster_wrap h3,
+div.poster_wrap .links,
+.middle {
+  width: 100%;
+  margin: 5px 0;
+  padding: 0;
+   -webkit-transform: translateY(-40px);
+  transform: translateY(-40px);
+}
+
+div.poster_wrap h3 {
+  font-weight: 700;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  text-align: center;
+  opacity: 0;
+}
+
+.middle {
+	text-transform: uppercase;
+	outline: 0;
+	background: #666666;
+	width: 80px;
+	height: 30px;
+	border: 0;
+	color: #FFFFFF;
+	font-size: 14px;
+	opacity: 0;
+	position: absolute;
+	margin-left: 60px;
+	}
+
+.middle:hover {
+	background: #F1404B;
+}
+
+div.poster_wrap:hover img,
+div.poster_wrap.hover img {
+  zoom: 1;
+  filter: alpha(opacity=50);
+  -webkit-opacity: 0.7;
+  opacity: 0.7;
+}
+
+div.poster_wrap:hover:after,
+div.poster_wrap.hover:after {
+  opacity: 1;
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+}
+
+div.poster_wrap:hover h3,
+div.poster_wrap.hover h3,
+div.poster_wrap:hover input,
+div.poster_wrap.hover input {
+  -webkit-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+.movieposter {
+	width: 300px;
+	height: 380px;
+	padding: 20px;
+	display: block;
+	transition: .5s ease;
+}
+
+div.before_after {
+	width: 100%;
+	display: inline-block;
+}
+
+.pageButton{
+	text-transform: uppercase;
+	outline: 0;
+	background: #666666;
+	width: 150px;
+	height: 46px;
+	border: 0;
+	color: #FFFFFF;
+	font-size: 14px;
+	-webkit-transition: all 0.3 ease;
+	transition: all 0.3 ease;
+	cursor: pointer;
+	display: inline-block;
+	float: left;
+}
+
+.pageButton:hover {
+	background: #F1404B;
+} 
+
+input#next {
+	float: right;
+	margin: 30px 20px 0 0;
+}
+
+input#before {
+	margin: 30px 0 0 20px;
+}

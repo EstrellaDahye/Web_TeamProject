@@ -1,0 +1,299 @@
+
+@font-face {
+	font-family: "NanumGothic";
+	src: url("fonts/NanumGothic.ttf") format("truetype");
+} 
+
+/* ---------------- body:inner-preview ------------------------ */
+
+.inner-preview {
+    width: 1200px;
+    max-height: 1000px;
+}
+
+.p_container {
+	margin: 0px auto;
+	width: 1200px;
+}
+
+.texteffect {
+	text-transform:uppercase;
+	font-size:50px;
+	font-family:'Verdana';
+	padding:48px;
+}
+
+.sp-slide p {
+	font-weight: bold;
+}
+
+.sp-slide a {
+	color: #000000;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.sp-slide a:hover {
+	color: #f1404b;
+	text-decoration: none;
+}
+
+.sp-thumbnail-description {
+	display: inline-block;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 200px;
+}
+
+.p_first h3, .overtext a, #p_qna h3 {
+	display: inline-block;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 350px;
+}
+
+.p_image {
+	display: inline-block;
+	background: #2b2b2b;
+}
+
+.p_image img {
+	display: block;
+	width: 100%;
+}
+
+.p_image-full {
+	display: block;
+	width: 100%;
+	margin: 0 0 2em 0;
+}
+
+ul.p_style1 {
+	margin: 0;
+	padding: 0em 0em 0em 0em;
+	overflow: hidden;
+	list-style: none;
+	color: #6c6c6c;
+	border-top: 1px solid #dcdcdc;
+}
+
+ul.p_style1 li {
+	overflow: hidden;
+	display: block;
+	padding: 2.80em 0em;
+	border-top: 1px solid #D1CFCE;
+}
+
+ul.p_style1 li:first-child {
+	padding: 5em 0 0 0;
+	padding-bottom: 5em;
+	border-top: none;
+}
+
+ul.p_style1 {
+	margin-bottom: 0;
+}
+
+ul.p_style1 h3, #p_qna h3 {
+	padding: 1.2em 0em 1em 0em;
+	margin: 0 auto;
+	letter-spacing: 0.10em;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	font-weight: 600;
+	color: #454445;
+}
+
+ul.p_style1 a, #p_qna a {
+	text-decoration: none;
+	color: #525252;
+}
+
+ul.p_style1 a:hover, #p_qna a:hover {
+	text-decoration: underline;
+	color: #525252;
+}
+
+.p_title {
+	/* margin-bottom: 2em; */
+	text-align: center;
+}
+
+.p_title h2 {
+	font-weight: 400;
+	font-size: 2.8em;
+	color: #323232;
+}
+
+.p_title {
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 1.1em;
+	color: #6F6F6F;
+}
+
+#p_wrapper {
+	background: #FFF;
+}
+
+#p_page {
+	overflow: hidden;
+	padding: 6em 0em 6em 0em;
+	background: #FFF;
+}
+
+#p_content{
+	float: left;
+	width: 800px;
+	height: 995px;
+	border-top: 1px solid #DCDCDC;
+	border-bottom: 1px solid #DCDCDC;
+}
+
+#p_sidebar{
+	float: right;
+	width: 350px;
+	border-bottom: 1px solid #DCDCDC;
+}
+
+#p_qna {
+  position: relative;
+  overflow: hidden;
+  min-width: 220px;
+  max-width: 800px; 
+  max-height: 350px;
+  width: 800px;
+  text-align: center;
+  font-size: 16px;
+  border-top: 1px solid #DCDCDC;
+  padding-top: 63px;
+}
+
+#p_qna ul {
+	width: 400px;
+	list-style: none;
+	float: left;
+}
+
+/* ------------------------ today's pick page -------------------------- */
+
+.todaypic_container {
+	width: 100%;
+	height: 1100px;
+	font-family:"NanumGothic", "나눔고딕", "맑은 고딕", "돋움", Dotum, Verdana, Tahoma;
+	font-color:#666666;
+	font-size: 12pt;
+}
+
+.todaypic_form {
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+	padding-top: 45px;
+	/* position: absolute; */
+	overflow: hidden;
+}
+
+.todaypic_contents {
+	margin-top: 50px;
+}
+
+.todaypic_slideArea {
+	width: 600px;
+	height: 850px;
+	float: left;
+	border: none;
+}
+
+.todaypic_side {
+	width: 600px;
+	height: 850px;
+	float: left;
+	border: none;
+	margin: 0 auto;
+}
+
+.todaypic_side p:first-child{
+	font-size: 30px;
+	font-color: red;
+}
+
+div#tab-1 :first-child{
+	padding: 20px;
+}
+
+div#tab-1 p {
+	padding: 20px;
+} 
+
+div#tab-3 iframe {
+	padding: 20px;
+}
+
+div#tab-3>iframe{
+	width: 560px;
+	height: 300px;	
+}
+
+div#tab-3 h3 {
+	padding: 0 0 0 20px;
+}
+
+div#tab-3 h3:first-child{
+	padding: 20px 0 0 20px;
+}
+
+ul.tabs{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+ul.tabs li{
+	background: none;
+	color: #222;
+	display: inline-block;
+	padding: 10px 15px;
+	cursor: pointer;
+}
+
+ul.tabs li.current{
+	background: #D1CFCE;
+	color: #222;
+}
+
+.tab-content{
+	height: 789px;
+	display: none;
+	background: #D1CFCE;
+	padding: 15px;
+}
+
+.tab-content.current{
+	display: inherit;
+}
+
+.tab-content li {
+	list-style: none;
+}
+
+.tab-2_form { 
+	width: 100%; 
+	overflow: visible;
+	padding: 20px;
+}
+
+.test{  
+	height: 210px; 
+	 display: inline-block; 
+	 padding:20px;
+	 margin: 10px 0 10px 0;
+	 text-align: center;
+}
+
+.test>p {
+	margin-top:10px;
+}

@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: "NanumGothic";
+	src: url("fonts/NanumGothic.ttf") format("truetype");
+} 
+
+/* -------------------------- 팝업 창 -------------------------- */
+
+.pop_container {
+	width: 100%;
+	height: 580px;
+	font-family:"NanumGothic", "나눔고딕", "맑은 고딕", "돋움", Dotum, Verdana, Tahoma;
+	font-color:#666666;
+	font-size: 12pt;
+}
+
+.pop_content {
+	margin-top: 20px;
+	width: 680px;
+	height: 580px;	
+	position: relative;
+	margin: 0 auto;
+}
+
+.pop_form {
+	margin-top: 30px;
+}
+
+.pop_poster {
+	width: 338px;
+	height: 580px;
+	float: left;
+	border: 0;
+	padding-top: 30px;
+}
+
+.story_area {
+	width: 320px;
+	height: 580px;
+	float: right;
+	display:inline-block;
+	overflow: hidden;
+
+}
+
+#title_sub {
+	font-size: 12pt;
+	text-decoration: underline, italic;
+}
+
+.pop_story h1 {
+	text-align: center;
+	font-family: "League-Gothic", Courier;
+	font-size: 40px; 
+	text-transform: uppercase;
+	color: #F1404B;
+	text-shadow: 8px 8px 0 #DCDCDC;
+}
+
+.pop_story p {
+	width: 270px;
+	background:#f9f9f9;
+	border-left:10px solid #dedede;
+	margin:1.5em auto;
+	padding:1em;
+	quotes:"\201C""\201D""\2018""\2019";
+}
+
+.pop_story p:before {
+	color:#ccc;
+	content:open-quote;
+	font-size:4em;
+	line-height:.1em;
+	margin-right:.25em;  
+	vertical-align:-.4em;
+}
+
+.sellpopup {
+	width: 100%;
+	height: 40px;
+	text-transform: uppercase;
+	outline: 0;
+	background: #666666;
+	border: 0;
+	color: #FFFFFF;
+	font-size: 14px;
+	-webkit-transition: all 0.3 ease;
+	transition: all 0.3 ease;
+	cursor: pointer;
+}
+
+.sellpopup:hover {
+	background: #F1404B;
+}
